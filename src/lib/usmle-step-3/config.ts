@@ -1,0 +1,45 @@
+// USMLE Step 3 Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM135",
+  slug: "usmle-step-3",
+  name: "USMLE Step 3",
+  fullName: "USMLE Step 3",
+  alias: "USMLE Step 3",
+  family: "USMLE",
+  category: "Professional licensure",
+  subcategory: "Medical licensure",
+  country: "United States",
+  region: "North America",
+  languages: ["English"],
+  estimatedAnnualTakers: "smaller",
+  testingWindow: "Year-round",
+  schedulePattern: "Continuous",
+  ageGroup: "25-40",
+  targetUser: "Resident physician",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ + CCS simulations"],
+  adaptivity: "Mixed",
+  sections: "2-day exam",
+  scoringMode: "Scaled",
+  essayOrSpeaking: "No",
+  ipRisk: "High",
+  contentReuse: "medical_licensure",
+  uiEngine: "objective_plus_simulation",
+  monetizationPotential: "Medium",
+  tier: "Tier 5",
+  launchWave: "Wave 7",
+  themeColor: "#DC2626",
+  themeColorDark: "#B91C1C",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;

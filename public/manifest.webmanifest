@@ -1,0 +1,26 @@
+{
+  "name": "Koydo USMLE Step 3 — Exam Prep",
+  "short_name": "Koydo USMLE Step 3",
+  "description": "USMLE Step 3 exam preparation with AI-powered study tools",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#DC2626",
+  "background_color": "#DC2626",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
