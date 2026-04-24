@@ -1,4 +1,4 @@
-// Auto-generated content manifest for Usmle Step 3
+// Auto-generated content manifest for USMLE Step 3
 // Question targets are 2-3x competition floor
 
 export type ActivityType =
@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -34,36 +34,54 @@ export interface ContentManifest {
 
 export const CONTENT_MANIFEST: ContentManifest = {
   examId: "usmle-step-3",
-  examName: "Usmle Step 3",
-  totalQuestions: 2300,
-  category: "admissions",
+  examName: "USMLE Step 3",
+  totalQuestions: 2600,
+  category: "professional",
   topics: [
-  {
-    id: "verbal",
-    domain: "verbal",
-    title: "Verbal",
-    icon: "📖",
-    color: "#1E40AF",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "reading_passage", "cloze_deletion"],
-  },
-  {
-    id: "quantitative",
-    domain: "quantitative",
-    title: "Quantitative",
-    icon: "🔢",
-    color: "#7C3AED",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "numeric_input", "whiteboard"],
-  },
-  {
-    id: "writing",
-    domain: "writing",
-    title: "Writing",
-    icon: "✍️",
-    color: "#D97706",
-    questionTarget: 500,
-    activityTypes: ["essay"],
-  }
+    {
+  id: "ambulatory-care",
+  domain: "ambulatory-care",
+  title: "Ambulatory Care",
+  icon: "🩺",
+  color: "#1E40AF",
+  minQuestionCount: 550,
+  requiredActivityTypes: ["multiple_choice", "case_study"],
+},
+{
+  id: "inpatient-care",
+  domain: "inpatient-care",
+  title: "Inpatient Care",
+  icon: "🏥",
+  color: "#DC2626",
+  minQuestionCount: 550,
+  requiredActivityTypes: ["multiple_choice", "case_study"],
+},
+{
+  id: "emergency-medicine",
+  domain: "emergency-medicine",
+  title: "Emergency Medicine",
+  icon: "🚑",
+  color: "#D97706",
+  minQuestionCount: 450,
+  requiredActivityTypes: ["multiple_choice", "scenario_based"],
+},
+{
+  id: "patient-safety",
+  domain: "patient-safety",
+  title: "Patient Safety",
+  icon: "🛡️",
+  color: "#059669",
+  minQuestionCount: 450,
+  requiredActivityTypes: ["multiple_choice", "scenario_based"],
+},
+{
+  id: "clinical-case-simulation",
+  domain: "clinical-case-simulation",
+  title: "Clinical Case Simulation",
+  icon: "💻",
+  color: "#7C3AED",
+  minQuestionCount: 600,
+  requiredActivityTypes: ["case_study", "simulation"],
+}
   ],
 };

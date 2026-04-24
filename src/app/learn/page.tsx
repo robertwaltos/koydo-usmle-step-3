@@ -65,7 +65,7 @@ export default async function LearnPage() {
     id: string; slug: string; canonical_name: string; short_description: string | null; quality_tier: string | null; domain_code: string | null;
   }>;
   const isPremium = (entitlementResult.data as { status: string } | null)?.status === "active";
-  const crossSellApps = getCrossSellApps("admissions");
+  const crossSellApps = getCrossSellApps(EXAM_CONFIG.category);
 
   const domainScores: Record<string, { total: number; count: number }> = {};
   for (const a of attempts) {
